@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dental Clinic Sidebar</title>
+<link rel="stylesheet" href="styles.css">
+
+
+</head>
+<style>
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    background-color: #333;
+    width: 200px;
+    height: 100%;
+    position: fixed;
+}
+
+.logo {
+    background-color: #019587;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation ul li a {
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    text-decoration: none;
+    border-bottom: 1px solid #444;
+}
+
+.navigation ul li a .icon {
+    margin-right: 10px;
+}
+
+.navigation ul li a:hover {
+    background-color: #555;
+}
+
+/* You need to replace the following classes with the actual icon classes */
+.patients-icon:before { content: "\\1F468"; } /* Example Unicode, replace with actual icon content */
+.appointments-icon:before { content: "\\1F4C5"; }
+.services-icon:before { content: "\\1F4E6"; }
+.invoices-icon:before { content: "\\1F4B3"; }
+.online-app-icon:before { content: "\\1F310"; }
+.logout-icon:before { content: "\\1F52B"; }
+
+</style>
+<body>
+    
+<div class="sidebar">
+    <h1 class="logo">Dental Clinic</h1>
+    <nav class="navigation">
+        <ul>
+            <li><a href="#patients"><i class="icon patients-icon"></i>Patients</a></li>
+            <li><a href="#appointments"><i class="icon appointments-icon"></i>Appointment</a></li>
+            <li><a href="#services"><i class="icon services-icon"></i>Services</a></li>
+            <li><a href="#invoices"><i class="icon invoices-icon"></i>Invoices</a></li>
+            <li><a href="#online-app"><i class="icon online-app-icon"></i>Online App</a></li>
+            <li><a href="#logout"><i class="icon logout-icon"></i>Logout</a></li>
+        </ul>
+    </nav>
+</div>
+</body>
+</html>
